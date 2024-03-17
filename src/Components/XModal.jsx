@@ -78,7 +78,7 @@ function XModal() {
                 <div ref={modalRef} className="modal" onClick={closeModal}>
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
                         <h2>Modal Form</h2>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} data-testid="modal-form">
                             <input type="text" required placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
                             <input type="email" required id="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                             <input type="date" required id="dob" placeholder="Date of Birth" value={dob} onChange={e => setDob(e.target.value)} />

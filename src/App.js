@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import XModal from './XModal';
+import XModal from './Components/XModal';
 
 function App() {
   return (
